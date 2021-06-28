@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            width: 20rem;
+            margin: 1rem 2rem;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            background-color: #2b50aa;
+            color: #f1f7ed;
+            border: none;
+            border-radius: 1rem;
+            transition: transform .3s ease-in-out;
+        }
+        button:hover,
+        button:active {
+            background-color: #4ea5d9;
+            transform: scale(1.1);
+        }
+        .feed {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+        }
+        .card {
+            height: 12rem;
+            border-radius: 5px;
+            display: grid;
+            grid-template-rows: 60% 40%;
+            background-color: #2b50aa;
+            color: #f1f7ed;
+        }
+        .card img{
+            justify-self: center;
+            align-self: center;
+            height: 5rem;
+            width: 7rem;
+        }
+        .card h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <button id="btnXhr">Show countries with xhr</button>
+        <button id="btnAsync">Show countries with async</button>
+    </nav>
+    <section class="feed">
+    </section>
+    <script type="module" src="samples/hello.js"></script>
+    <script type="module" src="samples/bye.js"></script>
+    <script type="module" src="samples/xhr.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
