@@ -225,4 +225,3 @@ document.addEventListener("click", (e) => {
         loadStyle(theme)
     }
 })
-// style
