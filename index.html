@@ -4,74 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <style>
-        *{
-            font-family: sans-serif;
-        }
-        a {
-            padding: .5rem .9rem;
-            border-radius: 10px;
-            font-size: .8rem;
-            text-decoration:none;
-            color: #f1f7ed;
-            background-color: #2b50aa;
-        }
-        .nav {
-            display: flex;
-            flex-direction: column;
-        }
-        button {
-            width: 20rem;
-            margin: 1rem 2rem;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            background-color: #2b50aa;
-            color: #f1f7ed;
-            border: none;
-            border-radius: 1rem;
-            transition: transform .3s ease-in-out;
-        }
-        button:hover,
-        button:active {
-            background-color: #4ea5d9;
-            transform: scale(1.1);
-        }
-        .feed {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 5px;
-        }
-        .card {
-            height: 12rem;
-            border-radius: 5px;
-            display: grid;
-            grid-template-rows: 60% 40%;
-            background-color: #2b50aa;
-            color: #f1f7ed;
-        }
-        .card img{
-            justify-self: center;
-            align-self: center;
-            height: 5rem;
-            width: 7rem;
-        }
-        .card h3 {
-            font-size: 1rem;
-            font-weight: 400;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <title>JS Projects</title>
 </head>
 <body>
-    <nav class="nav">
-        <button id="btnXhr">Show countries with xhr</button>
-        <button id="btnAsync">Show countries with async</button>
-    </nav>
-    <section class="feed">
+    <header class="header container">
+        <h2>Projects</h2>
+        <p>
+            <span>Hello there</span>
+            I'm DevDuxAaron and here I present you a list of some of my projects.
+            My favorite ones are marked for you to check them out. Any comment you may have,
+            let me know on Twitter <a target="_blank" href="https://twitter.com/42Joel54">@DevDuxAaron</a> Hope you like it.
+        </p>
+    </header>
+    <section class="feed container">
+        <article class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Calculator</h3>
+            <p>
+                A cool calculator that can change between themes and remember your favorite one. Made entirely with JS.
+            </p>
+            <a aria-label="Link to project" href="./content/calc.html">Check it out</a>
+        </article>
+        <article class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Countries list</h3>
+            <p>
+                A summary of flag countries, practicing the usage of XMLHttpRequest
+            </p>
+            <a aria-label="Link to project" href="./content/xhr.html">Check it out</a>
+        </article>
+        <article class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Calculator</h3>
+            <p>
+                A cool calculator that can change between themes and remember your favorite one. Made entirely with JS.
+            </p>
+            <a aria-label="Link to project" href="./content/calc.html">Check it out</a>
+        </article>
+        <article class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Countries list</h3>
+            <p>
+                A summary of flag countries, practicing the usage of XMLHttpRequest
+            </p>
+            <a aria-label="Link to project" href="./content/xhr.html">Check it out</a>
+        </article>
+        <article class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Calculator</h3>
+            <p>
+                A cool calculator that can change between themes and remember your favorite one. Made entirely with JS.
+            </p>
+            <a aria-label="Link to project" href="./content/calc.html">Check it out</a>
+        </article>
+        <article class="card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Countries list</h3>
+            <p>
+                A summary of flag countries, practicing the usage of XMLHttpRequest
+            </p>
+            <a aria-label="Link to project" href="./content/xhr.html">Check it out</a>
+        </article>
     </section>
-    <a href="./content/calc.html">Calculadora JS</a>
-    <script type="module" src="./main.js"></script>
+    <footer class="footer container">
+        <ul class="footer_social container">
+            <li>
+                <a target="_blank" href="https://github.com/DevDuxAaron"><i class="fab fa-github"></i>GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://twitter.com/42Joel54"><i class="fab fa-twitter"></i>Twitter</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://devduxaaron.github.io/"><i class="fas fa-globe-americas"></i>Web Page</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,4 @@
-import { hello } from "./samples/hello.js";
-import { bye } from "./samples/bye.js";
-import { showCountries } from "./samples/xhr.js"
+import { showCountries } from "../samples/xhr.js"
 
 document.addEventListener("click", (e) => {
     const xhr = document.getElementById("btnXhr")
