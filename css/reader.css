@@ -1,0 +1,94 @@
+:root {
+    --dark: #0a0a0a;
+    --background: #313840;
+    --color: #888888;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Loop';
+}
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+body {
+    background-color: var(--background);
+    color: var(--color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    height: 90%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 60% 20%;
+    align-items: center;
+    justify-content: center;
+}
+section>.title {
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+}
+section .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+.controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.controls :nth-child(1) {
+    font-size: 1.2rem;
+}
+.btn {
+    min-width: 7rem;
+    height: 3rem;
+    border: 1px solid var(--color);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color);
+    background: var(--background);
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    color: var(--background);
+    box-shadow: inset 300px 0 0 1px white,inset -300px 0 0 1px white;
+}
+.input {
+    width: 100%;
+    padding-bottom: .5rem;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color);
+    font-size: 1.5rem;
+    color: var(--color);
+    background: var(--background);
+}
+footer {
+    color: var(--color);
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+footer h4 {
+    margin: 0.8rem;
+}
+@media screen and (min-width:768px) {
+    .controls {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .controls :nth-child(1) {
+        font-size: 1.5rem;
+    }
+}
